@@ -1,0 +1,39 @@
+{
+    "name": "wamesk/laravel-nova-iban-field",
+    "description": "Laravel Nova 4 IBAN field.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "nova4",
+        "iban",
+        "vue"
+    ],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2",
+        "laravel/nova": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wame\\Iban\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wame\\Iban\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
