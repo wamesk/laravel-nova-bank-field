@@ -1,0 +1,35 @@
+.input-wrapper {
+  position: relative;
+  padding-bottom: 1rem;
+}
+.input-wrapper:last-child {
+  padding-bottom: 0;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+.row .col {
+  padding-bottom: 0;
+  padding-right: 1rem;
+  width: 100%;
+}
+.row .col:last-child {
+  padding-right: 0;
+}
+
+.status {
+  padding-top: 0.1rem;
+}
+.status svg {
+  margin-top: -0.2rem;
+}
+
+.popover-wrapper {
+  position: relative;
+}
+.popover-wrapper .popover {
+  position: absolute;
+}
+

@@ -1,0 +1,37 @@
+.input-wrapper {
+    position: relative;
+    padding-bottom: 1rem;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.row {
+    display: flex;
+    width: 100%;
+
+    .col {
+        padding-bottom: 0;
+        padding-right: 1rem;
+        width: 100%;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.status {
+    padding-top: .1rem;
+
+    svg {
+        margin-top: -.2rem
+    }
+}
+
+//.list {
+//    .item {
+//        border-top: 1px spolid
+//    }
+//}

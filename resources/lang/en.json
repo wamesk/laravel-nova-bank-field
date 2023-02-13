@@ -1,0 +1,17 @@
+{
+    "bank.title": "Bank name:",
+    "iban.title": "IBAN:",
+    "bban.title": "BBAN:",
+    "bic.title": "BIC:",
+
+    "bank.placeholder": "Bank name",
+    "iban.placeholder": "IBAN",
+    "bban.placeholder": "BBAN",
+    "bic.placeholder": "BIC",
+
+    "iban.valid": "IBAN is valid",
+    "iban.invalid": "IBAN is invalid",
+
+    "bban_and_bic.valid": "BBAN and BIC is valid",
+    "bban_or_bic.invalid": "You must enter a valid BBAN and BIC"
+}

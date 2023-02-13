@@ -1,0 +1,205 @@
+{
+  "chars": 24,
+  "bank_code": 4,
+  "account_prefix": 6,
+  "account_number": 10,
+  "iban_regex": "^([a-zA-Z]{2})(\\d{2})(\\d{4})(\\d{6})(\\d{10})$",
+  "source": "https://nbs.sk/en/payments/general-information/directories-and-registers/directory-identification-codes-domestic-payment-system-in-sr/",
+  "bank": [
+    {
+      "bic": "SUBASKBX",
+      "code": "0200",
+      "name": "Všeobecná úverová banka, a.s."
+    },
+    {
+      "bic": "GIBASKBX",
+      "code": "0900",
+      "name": "Slovenská sporiteľňa, a.s."
+    },
+    {
+      "bic": "NBSBSKBX",
+      "code": "0720",
+      "name": "Národná banka Slovenska"
+    },
+    {
+      "bic": "TATRSKBX",
+      "code": "1100",
+      "name": "Tatra banka, a.s."
+    },
+    {
+      "bic": "UNCRSKBX",
+      "code": "1111",
+      "name": "UniCredit Bank Czech Republic and Slovakia, a.s., pobočka zahraničnej banky"
+    },
+    {
+      "bic": "SLZBSKBA",
+      "code": "3000",
+      "name": "Slovenská záručná a rozvojová banka, a.s."
+    },
+    {
+      "bic": "LUBASKBX",
+      "code": "3100",
+      "name": "Prima banka Slovensko, a.s. – kód pre dobeh platieb"
+    },
+    {
+      "bic": "KOMASK2X",
+      "code": "5600",
+      "name": "Prima banka Slovensko, a.s."
+    },
+    {
+      "bic": "PRVASKBA",
+      "code": "5900",
+      "name": "Prvá stavebná sporiteľňa, a.s."
+    },
+    {
+      "bic": "POBNSKBA",
+      "code": "6500",
+      "name": "365.bank, a.s."
+    },
+    {
+      "bic": "INGBSKBX",
+      "code": "7300",
+      "name": "ING Bank N.V.,  pobočka zahraničnej banky"
+    },
+    {
+      "bic": "CEKOSKBX",
+      "code": "7500",
+      "name": "Československá obchodná banka, a.s."
+    },
+    {
+      "bic": "WUSTSKBA",
+      "code": "7930",
+      "name": "Wüstenrot stavebná sporiteľňa, a.s."
+    },
+    {
+      "bic": "KOMBSKBA",
+      "code": "8100",
+      "name": "Komerční banka, a.s., pobočka zahraničnej banky"
+    },
+    {
+      "bic": "BSLOSK22",
+      "code": "8120",
+      "name": "Privatbanka, a.s."
+    },
+    {
+      "bic": "CITISKBA",
+      "code": "8130",
+      "name": "Citibank Europe plc, pobočka zahraničnej banky"
+    },
+    {
+      "bic": "KBSPSKBX",
+      "code": "8170",
+      "name": "ČSOB stavebná sporiteľňa, a.s."
+    },
+    {
+      "bic": "EXSKSKBX",
+      "code": "8160",
+      "name": "EXIMBANKA SR"
+    },
+    {
+      "bic": "SPSRSKBA",
+      "code": "8180",
+      "name": "Štátna pokladnica"
+    },
+    {
+      "bic": "CDSA",
+      "code": "8191",
+      "name": "Centrálny depozitár cenných papierov SR, a.s."
+    },
+    {
+      "bic": "MAISSA",
+      "code": "8400",
+      "name": "COFIDIS SA, pobočka zahraničnej banky"
+    },
+    {
+      "bic": "JTBPSKBA",
+      "code": "8320",
+      "name": "J&T BANKA, a.s., pobočka zahraničnej banky"
+    },
+    {
+    "bic": "FIOZSKBA",
+      "code": "8330",
+      "name": "Fio banka, a.s., pobočka zahraničnej banky"
+    },
+    {
+      "bic": "BREXSKBX",
+      "code": "8360",
+      "name": "mBank S.A., pobočka zahraničnej banky"
+    },
+    {
+      "bic": "OBKLSKBA",
+      "code": "8370",
+      "name": "Oberbank AG  pobočka zahraničnej banky v Slovenskej republike"
+    },
+    {
+      "bic": "BFKKSKBB",
+      "code": "8420",
+      "name": "BKS Bank AG, pobočka zahraničnej banky v SR"
+    },
+    {
+      "bic": "KODBSKBX",
+      "code": "8430",
+      "name": "KDB Bank Europe Ltd., pobočka zahraničnej banky"
+    },
+    {
+      "code": "9950",
+      "bic": "PKSR",
+      "name": "SIA Slovakia, s.r.o."
+    },
+    {
+    "bic": "TPAYSKBX",
+      "code": "9952",
+      "name": "Trust Pay, a.s."
+    },
+    {
+      "bic": "KPAYSK22",
+      "code": "9954",
+      "name": "K-PAY a.s."
+    },
+    {
+      "bic": "PANXSK22",
+      "code": "9955",
+      "name": "Unifiedpost Payments, organizačná zložka"
+    },
+    {
+      "code": "8440",
+      "bic": "BNPASA",
+      "name": "BNP PARIBAS PERSONAL FINANCE SA, pobočka zahraničnej banky"
+    },
+    {
+      "bic": "BPKOSKBB",
+      "code": "8450",
+      "name": "PKO BP S.A., pobočka zahraničnej banky"
+    },
+    {
+      "bic": "FIOBCZPP",
+      "code": "2010",
+      "name": "Fio banka, a.s."
+    },
+    {
+      "bic": "JTBPCZPP",
+      "code": "5800",
+      "name": "J&T BANKA, a.s."
+    },
+    {
+      "bic": "EXPNCZPP",
+      "code": "4000",
+      "name": "Max banka a.s."
+    },
+    {
+      "bic": "MPUBCZPP",
+      "code": "2070",
+      "name": "TRINITY BANK a.s."
+    },
+    {
+      "bic": "PMBPCZPP",
+      "code": "6000",
+      "name": "PPF banka a.s."
+    },
+    {
+      "bic": "AGBACZPP",
+      "code": "0600",
+      "name": "MONETA Money Bank, a.s."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "iban.title": "IBAN: :iban",
+    "bban.title": "Číslo účtu: :account_number/:code",
+    "bic.title": "SWIFT: :bic",
+
+    "bank.placeholder": "Názov banky",
+    "iban.placeholder": "IBAN",
+    "bban.placeholder": "Číslo účtu",
+    "bic.placeholder": "SWIFT",
+
+    "iban.valid": "IBAN je platný",
+    "iban.invalid": "IBAN je neplatný",
+
+    "bban_and_bic.valid": "Číslo účtu a SWIFT je platné",
+    "bban_or_bic.invalid": "Musíte zadať platné číslo účtu a SWIFT"
+}
