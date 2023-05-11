@@ -132,6 +132,11 @@
       "name": "PPF banka a.s."
     },
     {
+      "bic": "",
+      "code": "6100",
+      "name": "kód užíván pro doběh plateb ve prospěch Raiffeisenbank a.s. do 30. 6. 2023"
+    },
+    {
       "bic": "COBACZPX",
       "code": "6200",
       "name": "COMMERZBANK Aktiengesellschaft, pobočka Praha"
