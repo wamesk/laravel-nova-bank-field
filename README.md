@@ -49,3 +49,15 @@ public function fields(NovaRequest $request): array
     ]);
 }
 ```
+
+## Repeatable field
+
+Package is also compatible with [Nova repeatable field](https://nova.laravel.com/docs/4.0/resources/repeater-fields.html)
+
+```php
+Repeater::make('Bank', 'bank')
+    ->repeatables([
+        MoreBanks::make()
+    ])
+    ->asJson()
+```
