@@ -39,29 +39,40 @@ export default {
   props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
   data() {
     return {
-      bank: null
+      bank: []
     }
   },
   mounted() {
     this.prepareBank()
   },
   methods: {
-    prepareBank() {
-      let bank = this.field.value
+        prepareBank() {
+          this.list = true
+
+          let bank =  []
+
+          console.log(this.field.value[0])
+          if (this.field.value.length && this.field.value[0].type !== undefined && this.field.value[0].type ==='more-bank') {
+            this.field.value.map(function (item) {
+              bank.push(JSON.parse(item.fields.bank))
+            })
+          } else {
+            bank = this.field.value
+          }
 
       // FIX for whitecube/nova-flexible-content
-      if (bank.length && !bank.startsWith('{')) {
-        let list = []
-
-        JSON.parse(bank).forEach(function (item) {
-          list.push(JSON.parse('{' + item.attributes.bank + '}'))
-        })
-
-        bank = list
-        this.list = true
-      } else if (bank.startsWith('{')) {
-        bank = JSON.parse(bank)
-      }
+      // if (bank.length && !bank.startsWith('{')) {
+      //   let list = []
+      //
+      //   JSON.parse(bank).forEach(function (item) {
+      //     list.push(JSON.parse('{' + item.attributes.bank + '}'))
+      //   })
+      //
+      //   bank = list
+      //   this.list = true
+      // } else if (bank.startsWith('{')) {
+      //   bank = JSON.parse(bank)
+      // }
 
       this.bank = bank
 
@@ -73,3 +84,11 @@ export default {
   }
 }
 </script>
+<style>
+.item {
+  margin-top: 10px;
+}
+.item:first-child {
+  margin-top: 0;
+}
+</style>
