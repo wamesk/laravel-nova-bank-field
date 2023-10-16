@@ -12,11 +12,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
   data: function data() {
     return {
-      bank: []
+      bank: [],
+      list: false
     };
   },
   mounted: function mounted() {
@@ -24,37 +26,19 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     prepareBank: function prepareBank() {
-      this.list = true;
-      var bank = [];
-      console.log(this.field.value[0]);
-      if (this.field.value.length && this.field.value[0].type !== undefined && this.field.value[0].type === 'more-bank') {
-        this.field.value.map(function (item) {
-          bank.push(JSON.parse(item.fields.bank));
-        });
-      } else {
-        bank = this.field.value;
+      var bank = this.field.value;
+      if (bank !== null) {
+        if (_typeof(bank) === 'object') {
+          var list = [];
+          bank.map(function (item) {
+            list.push(JSON.parse(item.fields.bank));
+          });
+          this.bank = list;
+          this.list = true;
+        } else if (bank.startsWith('{')) {
+          this.bank = JSON.parse(bank);
+        }
       }
-
-      // FIX for whitecube/nova-flexible-content
-      // if (bank.length && !bank.startsWith('{')) {
-      //   let list = []
-      //
-      //   JSON.parse(bank).forEach(function (item) {
-      //     list.push(JSON.parse('{' + item.attributes.bank + '}'))
-      //   })
-      //
-      //   bank = list
-      //   this.list = true
-      // } else if (bank.startsWith('{')) {
-      //   bank = JSON.parse(bank)
-      // }
-
-      this.bank = bank;
-
-      // this.bank = '<p><strong>' + bank.name + '</strong></p>'
-      //     + '<p>' + __('iban.title', { iban: bank.iban }) + '</p>'
-      //     + '<p>' + __('bban.title', { account_number: bank.bban, 'code': bank.bank_code })
-      //     + __('bic.title', { bic: bank.bic}) + '</p>';
     }
   }
 });
@@ -264,7 +248,7 @@ var _hoisted_8 = {
   key: 2
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.field.name), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_ctx.list ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.bank, function (item) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.field.name), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [$data.list === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.bank, function (item) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('iban.title', {
       'iban': item.iban
     })), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('bban.title', {
@@ -273,14 +257,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('bic.title', {
       'bic': item.bic
     })), 1 /* TEXT */)]);
-  }), 256 /* UNKEYED_FRAGMENT */))])) : $data.bank ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.bank.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('iban.title', {
+  }), 256 /* UNKEYED_FRAGMENT */))])) : typeof $data.bank.iban !== 'undefined' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.bank.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('iban.title', {
     'iban': $data.bank.iban
   })), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('bban.title', {
     'account_number': $data.bank.bban,
     'code': $data.bank.bank_code
   })) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('bic.title', {
     'bic': $data.bank.bic
-  })), 1 /* TEXT */)])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8, "–"))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <PanelItem :index=\"index\" :field=\"field\" />")], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */);
+  })), 1 /* TEXT */)])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_8, "—"))])]);
 }
 
 /***/ }),
@@ -689,7 +673,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
   'use strict';
 
 /*
- *      bignumber.js v9.1.1
+ *      bignumber.js v9.1.2
  *      A JavaScript library for arbitrary-precision arithmetic.
  *      https://github.com/MikeMcl/bignumber.js
  *      Copyright (c) 2022 Michael Mclaughlin <M8ch88l@gmail.com>
@@ -1324,7 +1308,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
      * arguments {number|string|BigNumber}
      */
     BigNumber.maximum = BigNumber.max = function () {
-      return maxOrMin(arguments, P.lt);
+      return maxOrMin(arguments, -1);
     };
 
 
@@ -1334,7 +1318,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
      * arguments {number|string|BigNumber}
      */
     BigNumber.minimum = BigNumber.min = function () {
-      return maxOrMin(arguments, P.gt);
+      return maxOrMin(arguments, 1);
     };
 
 
@@ -1978,24 +1962,20 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
 
 
     // Handle BigNumber.max and BigNumber.min.
-    function maxOrMin(args, method) {
-      var n,
+    // If any number is NaN, return NaN.
+    function maxOrMin(args, n) {
+      var k, y,
         i = 1,
-        m = new BigNumber(args[0]);
+        x = new BigNumber(args[0]);
 
       for (; i < args.length; i++) {
-        n = new BigNumber(args[i]);
-
-        // If any number is NaN, return NaN.
-        if (!n.s) {
-          m = n;
-          break;
-        } else if (method.call(m, n)) {
-          m = n;
+        y = new BigNumber(args[i]);
+        if (!y.s || (k = compare(x, y)) === n || k === 0 && x.s === n) {
+          x = y;
         }
       }
 
-      return m;
+      return x;
     }
 
 
@@ -2114,7 +2094,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
             n = xc[ni = 0];
 
             // Get the rounding digit at index j of n.
-            rd = n / pows10[d - j - 1] % 10 | 0;
+            rd = mathfloor(n / pows10[d - j - 1] % 10);
           } else {
             ni = mathceil((i + 1) / LOG_BASE);
 
@@ -2145,7 +2125,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
               j = i - LOG_BASE + d;
 
               // Get the rounding digit at index j of n.
-              rd = j < 0 ? 0 : n / pows10[d - j - 1] % 10 | 0;
+              rd = j < 0 ? 0 : mathfloor(n / pows10[d - j - 1] % 10);
             }
           }
 
@@ -3623,7 +3603,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.item {\r\n  margin-top: 10px;\n}\n.item:first-child {\r\n  margin-top: 0;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.item {\n  margin-top: 10px;\n}\n.item:first-child {\n  margin-top: 0;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4064,7 +4044,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DetailField_vue_vue_type_template_id_0224618e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DetailField.vue?vue&type=template&id=0224618e */ "./resources/js/components/DetailField.vue?vue&type=template&id=0224618e");
 /* harmony import */ var _DetailField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DetailField.vue?vue&type=script&lang=js */ "./resources/js/components/DetailField.vue?vue&type=script&lang=js");
 /* harmony import */ var _DetailField_vue_vue_type_style_index_0_id_0224618e_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css */ "./resources/js/components/DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css");
-/* harmony import */ var C_projects_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -4072,7 +4052,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_projects_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_DetailField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_DetailField_vue_vue_type_template_id_0224618e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/DetailField.vue"]])
+const __exports__ = /*#__PURE__*/(0,_Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_DetailField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_DetailField_vue_vue_type_template_id_0224618e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/DetailField.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -4094,13 +4074,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _FormField_vue_vue_type_template_id_c023248a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormField.vue?vue&type=template&id=c023248a */ "./resources/js/components/FormField.vue?vue&type=template&id=c023248a");
 /* harmony import */ var _FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormField.vue?vue&type=script&lang=js */ "./resources/js/components/FormField.vue?vue&type=script&lang=js");
-/* harmony import */ var C_projects_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_projects_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_FormField_vue_vue_type_template_id_c023248a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/FormField.vue"]])
+const __exports__ = /*#__PURE__*/(0,_Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_FormField_vue_vue_type_template_id_c023248a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/FormField.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -4122,13 +4102,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IndexField.vue?vue&type=template&id=9e63f81a */ "./resources/js/components/IndexField.vue?vue&type=template&id=9e63f81a");
 /* harmony import */ var _IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IndexField.vue?vue&type=script&lang=js */ "./resources/js/components/IndexField.vue?vue&type=script&lang=js");
-/* harmony import */ var C_projects_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_projects_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/IndexField.vue"]])
+const __exports__ = /*#__PURE__*/(0,_Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/IndexField.vue"]])
 /* hot reload */
 if (false) {}
 

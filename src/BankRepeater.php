@@ -1,12 +1,12 @@
 <?php
 
-namespace Wame\Bank\Repeater;
+namespace Wame\Bank;
 
 use Laravel\Nova\Fields\Repeater\Repeatable;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Wame\Bank\Bank;
 
-class MoreBanks extends Repeatable
+class BankRepeater extends Repeatable
 {
     /**
      * Get the fields displayed by the repeatable.

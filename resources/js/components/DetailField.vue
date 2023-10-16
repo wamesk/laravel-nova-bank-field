@@ -7,7 +7,7 @@
     </div>
 
     <div class="md:w-3/4 md:py-3 break-all lg:break-words">
-      <div v-if="list" class="list">
+      <div v-if="list === true" class="list">
         <div v-for="item in bank" class="item">
           <p><strong>{{ item.name }}</strong></p>
           <p>{{ __('iban.title', {'iban': item.iban}) }}</p>
@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <div v-else-if="bank">
+      <div v-else-if="typeof bank.iban !== 'undefined'">
         <p><strong>{{ bank.name }}</strong></p>
         <p>{{ __('iban.title', {'iban': bank.iban}) }}</p>
         <p>
@@ -27,11 +27,9 @@
         </p>
       </div>
 
-      <div v-else>–</div>
+      <p v-else>—</p>
     </div>
   </div>
-
-<!--  <PanelItem :index="index" :field="field" />-->
 </template>
 
 <script>
@@ -39,47 +37,31 @@ export default {
   props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
   data() {
     return {
-      bank: []
+        bank: [],
+        list: false
     }
   },
   mounted() {
     this.prepareBank()
   },
   methods: {
-        prepareBank() {
-          this.list = true
+    prepareBank() {
+        const bank = this.field.value
 
-          let bank =  []
+        if (bank !== null) {
+            if (typeof bank === 'object') {
+                const list = []
 
-          console.log(this.field.value[0])
-          if (this.field.value.length && this.field.value[0].type !== undefined && this.field.value[0].type ==='more-bank') {
-            this.field.value.map(function (item) {
-              bank.push(JSON.parse(item.fields.bank))
-            })
-          } else {
-            bank = this.field.value
-          }
+                bank.map(function (item) {
+                    list.push(JSON.parse(item.fields.bank))
+                })
 
-      // FIX for whitecube/nova-flexible-content
-      // if (bank.length && !bank.startsWith('{')) {
-      //   let list = []
-      //
-      //   JSON.parse(bank).forEach(function (item) {
-      //     list.push(JSON.parse('{' + item.attributes.bank + '}'))
-      //   })
-      //
-      //   bank = list
-      //   this.list = true
-      // } else if (bank.startsWith('{')) {
-      //   bank = JSON.parse(bank)
-      // }
-
-      this.bank = bank
-
-      // this.bank = '<p><strong>' + bank.name + '</strong></p>'
-      //     + '<p>' + __('iban.title', { iban: bank.iban }) + '</p>'
-      //     + '<p>' + __('bban.title', { account_number: bank.bban, 'code': bank.bank_code })
-      //     + __('bic.title', { bic: bank.bic}) + '</p>';
+                this.bank = list
+                this.list = true
+            } else if (bank.startsWith('{')) {
+                this.bank = JSON.parse(bank)
+            }
+        }
     }
   }
 }
