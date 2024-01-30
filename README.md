@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-composer require wamesk/laravel-nova-country
+composer require wamesk/laravel-nova-bank-field
 ```
 
 ## Usage
