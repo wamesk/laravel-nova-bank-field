@@ -1,6 +1,6 @@
 {
     "name": "wamesk/laravel-nova-bank-field",
-    "description": "Laravel Nova 4 Bank field.",
+    "description": "Laravel Nova 5 Bank field.",
     "keywords": [
         "laravel",
         "nova",
@@ -12,8 +12,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.0|^8.1|^8.2",
-        "laravel/nova": "^4.0"
+        "laravel/nova": "^5.0"
     },
     "autoload": {
         "psr-4": {
