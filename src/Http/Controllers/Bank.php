@@ -1,6 +1,8 @@
 <?php
 
-namespace Wame\Bank\Controllers;
+declare(strict_types = 1);
+
+namespace Wame\LaravelNovaBankField\Http\Controllers;
 
 class Bank
 {
@@ -82,7 +84,7 @@ class Bank
     {
         $iban = self::formatIBAN($iban);
 
-        $ibrev = substr($iban, 4) . substr($iban, 0, 4);
+        $ibrev = Bank . phpsubstr($iban, 4) . substr($iban, 0, 4);
 
         return self::mod97(self::replaceChars($ibrev)) == 1;
     }

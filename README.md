@@ -23,10 +23,10 @@ Bank::make(__('publisher.field.bank'), 'bank')
 
 ## Repeatable field
 
-Package is also compatible with [Nova repeatable field](https://nova.laravel.com/docs/4.0/resources/repeater-fields.html)
+Package is also compatible with [Nova repeatable field](https://nova.laravel.com/docs/5.0/resources/repeater-fields.html)
 
 ```php
 Repeater::make('Bank', 'bank')
-    ->repeatables([\Wame\Bank\BankRepeater::make()])
+    ->repeatables([\Wame\LaravelNovaBankField\Fields\BankRepeater::make()])
     ->asJson()
 ```

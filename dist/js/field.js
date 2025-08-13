@@ -295,84 +295,23 @@ var _hoisted_5 = {
   key: 0,
   "class": "status success text-green-500"
 };
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  fill: "none",
-  viewBox: "0 0 24 24",
-  stroke: "currentColor",
-  width: "16",
-  height: "16",
-  "class": "inline-block component-heroicons-outline-check-circle component-icon component-icon-boolean",
-  role: "presentation"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round",
-  "stroke-width": "2",
-  d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-})], -1 /* HOISTED */);
-var _hoisted_7 = {
+var _hoisted_6 = {
   key: 1,
   "class": "status error text-red-500"
 };
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  fill: "none",
-  viewBox: "0 0 24 24",
-  stroke: "currentColor",
-  width: "16",
-  height: "16",
-  "class": "inline-block component-heroicons-outline-x-circle component-icon component-icon-boolean",
-  role: "presentation"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round",
-  "stroke-width": "2",
-  d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
-})], -1 /* HOISTED */);
-var _hoisted_9 = {
+var _hoisted_7 = {
   "class": "row"
 };
-var _hoisted_10 = ["id", "placeholder"];
-var _hoisted_11 = ["id", "placeholder"];
-var _hoisted_12 = {
+var _hoisted_8 = ["id", "placeholder"];
+var _hoisted_9 = ["id", "placeholder"];
+var _hoisted_10 = {
   key: 0,
   "class": "status success text-green-500"
 };
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  fill: "none",
-  viewBox: "0 0 24 24",
-  stroke: "currentColor",
-  width: "16",
-  height: "16",
-  "class": "inline-block component-heroicons-outline-check-circle component-icon component-icon-boolean",
-  role: "presentation"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round",
-  "stroke-width": "2",
-  d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-})], -1 /* HOISTED */);
-var _hoisted_14 = {
+var _hoisted_11 = {
   key: 1,
   "class": "status error text-red-500"
 };
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  fill: "none",
-  viewBox: "0 0 24 24",
-  stroke: "currentColor",
-  width: "16",
-  height: "16",
-  "class": "inline-block component-heroicons-outline-x-circle component-icon component-icon-boolean",
-  role: "presentation"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round",
-  "stroke-width": "2",
-  d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
-})], -1 /* HOISTED */);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_DefaultField = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("DefaultField");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_DefaultField, {
@@ -403,7 +342,35 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return $options.changeIban && $options.changeIban.apply($options, arguments);
         }),
         required: "true"
-      }, null, 42 /* CLASS, PROPS, HYDRATE_EVENTS */, _hoisted_4), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.formData.iban]]), $data.status.iban === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('iban.valid')), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.status.iban === false ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('iban.invalid')), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      }, null, 42 /* CLASS, PROPS, NEED_HYDRATION */, _hoisted_4), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.formData.iban]]), $data.status.iban === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [_cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        stroke: "currentColor",
+        width: "16",
+        height: "16",
+        "class": "inline-block component-heroicons-outline-check-circle component-icon component-icon-boolean",
+        role: "presentation"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "stroke-width": "2",
+        d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      })], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('iban.valid')), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.status.iban === false ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [_cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        stroke: "currentColor",
+        width: "16",
+        height: "16",
+        "class": "inline-block component-heroicons-outline-x-circle component-icon component-icon-boolean",
+        role: "presentation"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "stroke-width": "2",
+        d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+      })], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('iban.invalid')), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
         "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["input-wrapper col", {
           'success': $data.status.bban === true,
           'error': $data.status.bban === false
@@ -420,7 +387,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return $options.changeBbanBic && $options.changeBbanBic.apply($options, arguments);
         }),
         required: "true"
-      }, null, 42 /* CLASS, PROPS, HYDRATE_EVENTS */, _hoisted_10), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.formData.bban]])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      }, null, 42 /* CLASS, PROPS, NEED_HYDRATION */, _hoisted_8), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.formData.bban]])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
         "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["input-wrapper col", {
           'success': $data.status.bic === true,
           'error': $data.status.bic === false
@@ -437,7 +404,35 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return $options.changeBbanBic && $options.changeBbanBic.apply($options, arguments);
         }),
         required: "true"
-      }, null, 42 /* CLASS, PROPS, HYDRATE_EVENTS */, _hoisted_11), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.formData.bic]])], 2 /* CLASS */)]), $data.status.bban === true && $data.status.bic === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('bban_and_bic.valid')), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.status.bban === false || $data.status.bic === false ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('bban_or_bic.invalid')), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+      }, null, 42 /* CLASS, PROPS, NEED_HYDRATION */, _hoisted_9), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.formData.bic]])], 2 /* CLASS */)]), $data.status.bban === true && $data.status.bic === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, [_cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        stroke: "currentColor",
+        width: "16",
+        height: "16",
+        "class": "inline-block component-heroicons-outline-check-circle component-icon component-icon-boolean",
+        role: "presentation"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "stroke-width": "2",
+        d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      })], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('bban_and_bic.valid')), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.status.bban === false || $data.status.bic === false ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [_cache[10] || (_cache[10] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        stroke: "currentColor",
+        width: "16",
+        height: "16",
+        "class": "inline-block component-heroicons-outline-x-circle component-icon component-icon-boolean",
+        role: "presentation"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "stroke-width": "2",
+        d: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+      })], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('bban_or_bic.invalid')), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
     }),
     _: 1 /* STABLE */
   }, 8 /* PROPS */, ["field", "errors", "show-help-text", "full-width-content"]);
@@ -494,175 +489,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./resources/js/field.js":
-/*!*******************************!*\
-  !*** ./resources/js/field.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_IndexField__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/IndexField */ "./resources/js/components/IndexField.vue");
-/* harmony import */ var _components_DetailField__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/DetailField */ "./resources/js/components/DetailField.vue");
-/* harmony import */ var _components_FormField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/FormField */ "./resources/js/components/FormField.vue");
-
-
-
-Nova.booting(function (app, store) {
-  app.component('index-bank', _components_IndexField__WEBPACK_IMPORTED_MODULE_0__["default"]);
-  app.component('detail-bank', _components_DetailField__WEBPACK_IMPORTED_MODULE_1__["default"]);
-  app.component('form-bank', _components_FormField__WEBPACK_IMPORTED_MODULE_2__["default"]);
-});
-
-/***/ }),
-
-/***/ "./resources/js/functions.js":
-/*!***********************************!*\
-  !*** ./resources/js/functions.js ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var BigNumber = __webpack_require__(/*! bignumber.js */ "./node_modules/bignumber.js/bignumber.js");
-function extractIBAN(iban) {
-  iban = _formatIBAN(iban);
-  if (!validateIBAN(iban)) return {
-    'valid': false
-  };
-  var options = _getOptionsByIBAN(iban);
-  var data = _matchIban(iban, options.iban_regex);
-  if (data !== false) {
-    data['valid'] = true;
-  } else {
-    return {
-      'valid': false
-    };
-  }
-  var bank = _getBankByCode(data.bank_code, options.bank);
-  if (bank !== false) {
-    data['name'] = bank.name;
-    data['bic'] = _formatBIC(bank.bic);
-  }
-  return data;
-}
-function extractAccountNumberAndBIC(account_number, bic) {
-  bic = _formatBIC(bic);
-  var country = _getCountryFromBIC(bic);
-  var options = _getOptionsByCountry(country);
-  var bank = _getBankByBic(bic, options.bank);
-  var number = bank.code + account_number.padStart(options.account_prefix + options.account_number, 0);
-  var check_digits = _getCheckDigits(number + country + '00');
-  var iban = country + check_digits + number;
-  var data = _matchIban(iban, options.iban_regex);
-  if (data !== false) {
-    data['valid'] = true;
-  } else {
-    return {
-      'valid': false
-    };
-  }
-  data['name'] = bank.name;
-  data['bic'] = bic;
-  return data;
-}
-function validateIBAN(iban) {
-  iban = _formatIBAN(iban);
-  var ibrev = iban.substr(4) + iban.substr(0, 4);
-  return _mod97(_replaceChars(ibrev)) == 1;
-}
-function _matchIban(iban, regex) {
-  var matches = iban.match(regex);
-  if (!matches) return false;
-  return {
-    'bank_code': matches[3],
-    'bban': matches[5],
-    'bic': null,
-    'branch_code': matches[4],
-    'check_digits': matches[2],
-    'country_code': matches[1],
-    'iban': matches[0],
-    'name': null
-  };
-}
-function _getBankByCode(bank_code, banks) {
-  var bank = banks.find(function (bank) {
-    return bank.code === bank_code;
-  });
-  return bank == undefined ? false : bank;
-}
-function _getBankByBic(bic, banks) {
-  var bank = banks.find(function (bank) {
-    return bic.startsWith(bank.bic);
-  });
-  return bank == undefined ? false : bank;
-}
-function _formatBIC(bic) {
-  return bic.replaceAll(' ', '').toUpperCase().concat('XXXXXXXXXXX').substring(0, 11);
-}
-function _getCountryFromIBAN(iban) {
-  return iban.substring(0, 2);
-}
-function _getCountryFromBIC(bic) {
-  return bic.substring(4, 6);
-}
-function _getOptionsByIBAN(iban) {
-  return _getOptionsByCountry(_getCountryFromIBAN(iban));
-}
-function _getOptionsByCountry(country) {
-  return __webpack_require__("./resources/js/country sync recursive ^\\.\\/.*\\.json$")("./" + country + ".json");
-}
-function _formatIBAN(iban) {
-  return iban.replaceAll(' ', '').toUpperCase();
-}
-function _getCheckDigits(number) {
-  for (var i = 0; i < number.length; i++) {
-    var _char = number[i];
-    if (!isNumeric(_char)) {
-      var position = _mod10(_char);
-      number = number.replaceAll(_char, position);
-    }
-  }
-  var div = new BigNumber(number).div(97);
-  var _float = (div.toFixed(5) + '').split('.')[1].slice(0, 5);
-  var result = parseFloat('0.' + _float).toFixed(5) * 97;
-  return 98 - Math.round(result);
-}
-function isNumeric(value) {
-  return /^-?\d+$/.test(value);
-}
-function _mod10(_char2) {
-  var alphabet = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
-  var check = alphabet.indexOf(_char2);
-  return check !== -1 ? check + 10 : false;
-}
-function _mod97(str) {
-  var res = 0;
-  for (var i = 0; i < str.length; i++) {
-    res = (res * 10 + parseInt(str[i], 10)) % 97;
-  }
-  return res;
-}
-function _replaceChars(str) {
-  var res = '';
-  for (var i = 0; i < str.length; i++) {
-    var cc = str.charCodeAt(i);
-    if (cc >= 65 && cc <= 90) {
-      res += (cc - 55).toString();
-    } else if (cc >= 97 && cc <= 122) {
-      res += (cc - 87).toString();
-    } else if (cc >= 48 && cc <= 57) {
-      res += str[i];
-    }
-  }
-  return res;
-}
-module.exports = {
-  extractIBAN: extractIBAN,
-  extractAccountNumberAndBIC: extractAccountNumberAndBIC,
-  validateIBAN: validateIBAN
-};
-
-/***/ }),
-
 /***/ "./node_modules/bignumber.js/bignumber.js":
 /*!************************************************!*\
   !*** ./node_modules/bignumber.js/bignumber.js ***!
@@ -673,10 +499,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
   'use strict';
 
 /*
- *      bignumber.js v9.1.2
+ *      bignumber.js v9.3.1
  *      A JavaScript library for arbitrary-precision arithmetic.
  *      https://github.com/MikeMcl/bignumber.js
- *      Copyright (c) 2022 Michael Mclaughlin <M8ch88l@gmail.com>
+ *      Copyright (c) 2025 Michael Mclaughlin <M8ch88l@gmail.com>
  *      MIT Licensed.
  *
  *      BigNumber.prototype methods     |  BigNumber methods
@@ -1577,7 +1403,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
 
         // xc now represents str converted to baseOut.
 
-        // THe index of the rounding digit.
+        // The index of the rounding digit.
         d = e + dp + 1;
 
         // The rounding digit: the digit to the right of the digit that may be rounded up.
@@ -1941,7 +1767,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
 
         // Fixed-point notation.
         } else {
-          i -= ne;
+          i -= ne + (id === 2 && e > ne);
           str = toFixedPoint(str, e, '0');
 
           // Append zeros?
@@ -3580,7 +3406,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
 		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
   // Node.js and other environments that support module.exports.
-  } else {}
+  } else // removed by dead control flow
+{}
 })(this);
 
 
@@ -3683,19 +3510,6 @@ module.exports = function (cssWithMappingToString) {
 
   return list;
 };
-
-/***/ }),
-
-/***/ "./resources/css/field.css":
-/*!*********************************!*\
-  !*** ./resources/css/field.css ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
 
 /***/ }),
 
@@ -4030,6 +3844,19 @@ exports["default"] = (sfc, props) => {
 
 /***/ }),
 
+/***/ "./resources/css/field.css":
+/*!*********************************!*\
+  !*** ./resources/css/field.css ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/js/components/DetailField.vue":
 /*!*************************************************!*\
   !*** ./resources/js/components/DetailField.vue ***!
@@ -4044,7 +3871,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DetailField_vue_vue_type_template_id_0224618e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DetailField.vue?vue&type=template&id=0224618e */ "./resources/js/components/DetailField.vue?vue&type=template&id=0224618e");
 /* harmony import */ var _DetailField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DetailField.vue?vue&type=script&lang=js */ "./resources/js/components/DetailField.vue?vue&type=script&lang=js");
 /* harmony import */ var _DetailField_vue_vue_type_style_index_0_id_0224618e_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css */ "./resources/js/components/DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css");
-/* harmony import */ var _Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _Users_sucho_Projects_Laravel_b2b_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -4052,65 +3879,10 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,_Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_DetailField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_DetailField_vue_vue_type_template_id_0224618e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/DetailField.vue"]])
+const __exports__ = /*#__PURE__*/(0,_Users_sucho_Projects_Laravel_b2b_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_DetailField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_DetailField_vue_vue_type_template_id_0224618e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/DetailField.vue"]])
 /* hot reload */
-if (false) {}
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
-
-/***/ }),
-
-/***/ "./resources/js/components/FormField.vue":
-/*!***********************************************!*\
-  !*** ./resources/js/components/FormField.vue ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _FormField_vue_vue_type_template_id_c023248a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormField.vue?vue&type=template&id=c023248a */ "./resources/js/components/FormField.vue?vue&type=template&id=c023248a");
-/* harmony import */ var _FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormField.vue?vue&type=script&lang=js */ "./resources/js/components/FormField.vue?vue&type=script&lang=js");
-/* harmony import */ var _Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
-
-
-
-
-;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_FormField_vue_vue_type_template_id_c023248a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/FormField.vue"]])
-/* hot reload */
-if (false) {}
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
-
-/***/ }),
-
-/***/ "./resources/js/components/IndexField.vue":
-/*!************************************************!*\
-  !*** ./resources/js/components/IndexField.vue ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IndexField.vue?vue&type=template&id=9e63f81a */ "./resources/js/components/IndexField.vue?vue&type=template&id=9e63f81a");
-/* harmony import */ var _IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IndexField.vue?vue&type=script&lang=js */ "./resources/js/components/IndexField.vue?vue&type=script&lang=js");
-/* harmony import */ var _Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
-
-
-
-
-;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Data_Laravel_sendy_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/IndexField.vue"]])
-/* hot reload */
-if (false) {}
+if (false) // removed by dead control flow
+{}
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
@@ -4133,35 +3905,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/FormField.vue?vue&type=script&lang=js":
-/*!***********************************************************************!*\
-  !*** ./resources/js/components/FormField.vue?vue&type=script&lang=js ***!
-  \***********************************************************************/
+/***/ "./resources/js/components/DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css ***!
+  \*********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FormField.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/FormField.vue?vue&type=script&lang=js");
- 
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_DetailField_vue_vue_type_style_index_0_id_0224618e_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css");
 
-/***/ }),
-
-/***/ "./resources/js/components/IndexField.vue?vue&type=script&lang=js":
-/*!************************************************************************!*\
-  !*** ./resources/js/components/IndexField.vue?vue&type=script&lang=js ***!
-  \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./IndexField.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/IndexField.vue?vue&type=script&lang=js");
- 
 
 /***/ }),
 
@@ -4181,6 +3934,51 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/FormField.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/components/FormField.vue ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _FormField_vue_vue_type_template_id_c023248a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormField.vue?vue&type=template&id=c023248a */ "./resources/js/components/FormField.vue?vue&type=template&id=c023248a");
+/* harmony import */ var _FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormField.vue?vue&type=script&lang=js */ "./resources/js/components/FormField.vue?vue&type=script&lang=js");
+/* harmony import */ var _Users_sucho_Projects_Laravel_b2b_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_Users_sucho_Projects_Laravel_b2b_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_FormField_vue_vue_type_template_id_c023248a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/FormField.vue"]])
+/* hot reload */
+if (false) // removed by dead control flow
+{}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/components/FormField.vue?vue&type=script&lang=js":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/FormField.vue?vue&type=script&lang=js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FormField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FormField.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/FormField.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/FormField.vue?vue&type=template&id=c023248a":
 /*!*****************************************************************************!*\
   !*** ./resources/js/components/FormField.vue?vue&type=template&id=c023248a ***!
@@ -4197,6 +3995,51 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/IndexField.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/IndexField.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IndexField.vue?vue&type=template&id=9e63f81a */ "./resources/js/components/IndexField.vue?vue&type=template&id=9e63f81a");
+/* harmony import */ var _IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IndexField.vue?vue&type=script&lang=js */ "./resources/js/components/IndexField.vue?vue&type=script&lang=js");
+/* harmony import */ var _Users_sucho_Projects_Laravel_b2b_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_Users_sucho_Projects_Laravel_b2b_vendor_wamesk_laravel_nova_bank_field_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/IndexField.vue"]])
+/* hot reload */
+if (false) // removed by dead control flow
+{}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/components/IndexField.vue?vue&type=script&lang=js":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/IndexField.vue?vue&type=script&lang=js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_IndexField_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./IndexField.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/IndexField.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/IndexField.vue?vue&type=template&id=9e63f81a":
 /*!******************************************************************************!*\
   !*** ./resources/js/components/IndexField.vue?vue&type=template&id=9e63f81a ***!
@@ -4209,19 +4052,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_IndexField_vue_vue_type_template_id_9e63f81a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./IndexField.vue?vue&type=template&id=9e63f81a */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/IndexField.vue?vue&type=template&id=9e63f81a");
-
-
-/***/ }),
-
-/***/ "./resources/js/components/DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css":
-/*!*********************************************************************************************!*\
-  !*** ./resources/js/components/DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css ***!
-  \*********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_DetailField_vue_vue_type_style_index_0_id_0224618e_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/DetailField.vue?vue&type=style&index=0&id=0224618e&lang=css");
 
 
 /***/ }),
@@ -4259,6 +4089,197 @@ webpackContext.id = "./resources/js/country sync recursive ^\\.\\/.*\\.json$";
 
 /***/ }),
 
+/***/ "./resources/js/country/CZ.json":
+/*!**************************************!*\
+  !*** ./resources/js/country/CZ.json ***!
+  \**************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"chars":24,"bank_code":4,"account_prefix":6,"account_number":10,"iban_regex":"^([a-zA-Z]{2})(\\\\d{2})(\\\\d{4})(\\\\d{6})(\\\\d{10})$","source":"https://www.cnb.cz/en/payments/accounts-bank-codes/","bank":[{"bic":"KOMBCZPP","code":"0100","name":"Komerční banka, a.s."},{"bic":"CEKOCZPP","code":"0300","name":"Československá obchodní banka, a. s."},{"bic":"AGBACZPP","code":"0600","name":"MONETA Money Bank, a.s."},{"bic":"CNBACZPP","code":"0710","name":"ČESKÁ NÁRODNÍ BANKA"},{"bic":"GIBACZPX","code":"0800","name":"Česká spořitelna, a.s."},{"bic":"FIOBCZPP","code":"2010","name":"Fio banka, a.s."},{"bic":"CITFCZPP","code":"2060","name":"Citfin, spořitelní družstvo"},{"bic":"MPUBCZPP","code":"2070","name":"TRINITY BANK a.s."},{"bic":"","code":"2100","name":"Hypoteční banka, a.s."},{"bic":"","code":"2200","name":"Peněžní dům, spořitelní"},{"bic":"ARTTCZPP","code":"2220","name":"Artesa, spořitelní družstvo"},{"bic":"CTASCZ22","code":"2250","name":"Banka CREDITAS a.s."},{"bic":"družstvo","code":"2260","name":"NEY spořitelní"},{"bic":"záložna","code":"2275","name":"Podnikatelská družstevní"},{"bic":"CITICZPX","code":"2600","name":"Citibank Europe plc, organizační složka"},{"bic":"BACXCZPP","code":"2700","name":"UniCredit Bank Czech Republic and Slovakia, a.s."},{"bic":"AIRACZPP","code":"3030","name":"Air Bank a.s."},{"bic":"BPPFCZP1","code":"3050","name":"BNP Paribas Personal Finance SA, odštěpný závod"},{"bic":"BPKOCZPP","code":"3060","name":"PKO BP S.A., Czech Branch"},{"bic":"INGBCZPP","code":"3500","name":"ING Bank N.V."},{"bic":"EXPNCZPP","code":"4000","name":"Max banka a.s."},{"bic":"NROZCZPP","code":"4300","name":"Národní rozvojová banka, a.s."},{"bic":"RZBCCZPP","code":"5500","name":"Raiffeisenbank a.s."},{"bic":"JTBPCZPP","code":"5800","name":"J&T BANKA, a.s."},{"bic":"PMBPCZPP","code":"6000","name":"PPF banka a.s."},{"bic":"","code":"6100","name":"kód užíván pro doběh plateb ve prospěch Raiffeisenbank a.s. do 30. 6. 2023"},{"bic":"COBACZPX","code":"6200","name":"COMMERZBANK Aktiengesellschaft, pobočka Praha"},{"bic":"BREXCZPP","code":"6210","name":"mBank S.A., organizační složka"},{"bic":"GEBACZPP","code":"6300","name":"BNP Paribas S.A., pobočka Česká republika"},{"bic":"SUBACZPP","code":"6700","name":"Všeobecná úverová banka a.s., pobočka Praha"},{"bic":"VBOECZ2X","code":"6800","name":"Sberbank CZ, a.s. v likvidaci"},{"bic":"DEUTCZPX","code":"7910","name":"Deutsche Bank Aktiengesellschaft Filiale Prag, organizační složka"},{"bic":"","code":"7950","name":"Raiffeisen stavební spořitelna a.s."},{"bic":"","code":"7960","name":"ČSOB Stavební spořitelna, a.s."},{"code":"7970","name":"MONETA Stavební Spořitelna, a.s."},{"bic":"","code":"7990","name":"Modrá pyramida stavební spořitelna, a.s."},{"bic":"GENOCZ21","code":"8030","name":"Volksbank Raiffeisenbank Nordoberpfalz eG pobočka Cheb"},{"bic":"OBKLCZ2X","code":"8040","name":"Oberbank AG pobočka Česká republika"},{"bic":"","code":"8060","name":"Stavební spořitelna České spořitelny, a.s."},{"bic":"CZEECZPP","code":"8090","name":"Česká exportní banka, a.s."},{"bic":"MIDLCZPP","code":"8150","name":"HSBC Continental Europe, Czech Republic"},{"bic":"","code":"8190","name":"Sparkasse Oberlausitz-Niederschlesien"},{"bic":"FFCSCZP1","code":"8198","name":"FAS finance company s.r.o."},{"bic":"MOUSCZP2","code":"8199","name":"MoneyPolo Europe s.r.o."},{"bic":"","code":"8200","name":"PRIVAT BANK der Raiffeisenlandesbank Oberösterreich Aktiengesellschaft, pobočka Česká republika"},{"bic":"PAERCZP1","code":"8220","name":"Payment execution s.r.o."},{"bic":"","code":"8230","name":"ABAPAY s.r.o."},{"bic":"","code":"8240","name":"Družstevní záložna Kredit, v likvidaci"},{"bic":"BKCHCZPP","code":"8250","name":"Bank of China (CEE) Ltd. Prague Branch"},{"bic":"COMMCZPP","code":"8255","name":"Bank of Communications Co., Ltd., Prague Branch odštěpný závod"},{"bic":"ICBKCZPP","code":"8265","name":"Industrial and Commercial Bank of China Limited, Prague Branch, odštěpný závod"},{"bic":"FAPOCZP1","code":"8270","name":"Fairplay Pay s.r.o."},{"bic":"BEFKCZP1","code":"8280","name":"B-Efekt a.s."},{"bic":"MRPSCZPP","code":"8293","name":"Mercurius partners s.r.o."},{"bic":"BEORCZP2","code":"8299","name":"BESTPAY s.r.o."},{"bic":"","code":"8500","name":"Multitude Bank p.l.c."}]}');
+
+/***/ }),
+
+/***/ "./resources/js/country/SK.json":
+/*!**************************************!*\
+  !*** ./resources/js/country/SK.json ***!
+  \**************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"chars":24,"bank_code":4,"account_prefix":6,"account_number":10,"iban_regex":"^([a-zA-Z]{2})(\\\\d{2})(\\\\d{4})(\\\\d{6})(\\\\d{10})$","source":"https://nbs.sk/en/payments/general-information/directories-and-registers/directory-identification-codes-domestic-payment-system-in-sr/","bank":[{"bic":"SUBASKBX","code":"0200","name":"Všeobecná úverová banka, a.s."},{"bic":"GIBASKBX","code":"0900","name":"Slovenská sporiteľňa, a.s."},{"bic":"NBSBSKBX","code":"0720","name":"Národná banka Slovenska"},{"bic":"TATRSKBX","code":"1100","name":"Tatra banka, a.s."},{"bic":"UNCRSKBX","code":"1111","name":"UniCredit Bank Czech Republic and Slovakia, a.s., pobočka zahraničnej banky"},{"bic":"SLZBSKBA","code":"3000","name":"Slovenská záručná a rozvojová banka, a.s."},{"bic":"LUBASKBX","code":"3100","name":"Prima banka Slovensko, a.s. – kód pre dobeh platieb"},{"bic":"KOMASK2X","code":"5600","name":"Prima banka Slovensko, a.s."},{"bic":"PRVASKBA","code":"5900","name":"Prvá stavebná sporiteľňa, a.s."},{"bic":"POBNSKBA","code":"6500","name":"365.bank, a.s."},{"bic":"INGBSKBX","code":"7300","name":"ING Bank N.V.,  pobočka zahraničnej banky"},{"bic":"CEKOSKBX","code":"7500","name":"Československá obchodná banka, a.s."},{"bic":"WUSTSKBA","code":"7930","name":"Wüstenrot stavebná sporiteľňa, a.s."},{"bic":"KOMBSKBA","code":"8100","name":"Komerční banka, a.s., pobočka zahraničnej banky"},{"bic":"BSLOSK22","code":"8120","name":"Privatbanka, a.s."},{"bic":"CITISKBA","code":"8130","name":"Citibank Europe plc, pobočka zahraničnej banky"},{"bic":"KBSPSKBX","code":"8170","name":"ČSOB stavebná sporiteľňa, a.s."},{"bic":"EXSKSKBX","code":"8160","name":"EXIMBANKA SR"},{"bic":"SPSRSKBA","code":"8180","name":"Štátna pokladnica"},{"bic":"CDSA","code":"8191","name":"Centrálny depozitár cenných papierov SR, a.s."},{"bic":"MAISSA","code":"8400","name":"COFIDIS SA, pobočka zahraničnej banky"},{"bic":"JTBPSKBA","code":"8320","name":"J&T BANKA, a.s., pobočka zahraničnej banky"},{"bic":"FIOZSKBA","code":"8330","name":"Fio banka, a.s., pobočka zahraničnej banky"},{"bic":"BREXSKBX","code":"8360","name":"mBank S.A., pobočka zahraničnej banky"},{"bic":"OBKLSKBA","code":"8370","name":"Oberbank AG  pobočka zahraničnej banky v Slovenskej republike"},{"bic":"BFKKSKBB","code":"8420","name":"BKS Bank AG, pobočka zahraničnej banky v SR"},{"bic":"KODBSKBX","code":"8430","name":"KDB Bank Europe Ltd., pobočka zahraničnej banky"},{"code":"9950","bic":"PKSR","name":"SIA Slovakia, s.r.o."},{"bic":"TPAYSKBX","code":"9952","name":"Trust Pay, a.s."},{"bic":"KPAYSK22","code":"9954","name":"K-PAY a.s."},{"bic":"PANXSK22","code":"9955","name":"Unifiedpost Payments, organizačná zložka"},{"bic":"PAYO","code":"9956","name":"Payout a.s."},{"bic":"BNPASA","code":"8440","name":"BNP PARIBAS PERSONAL FINANCE SA, pobočka zahraničnej banky"},{"bic":"BPKOSKBB","code":"8450","name":"PKO BP S.A., pobočka zahraničnej banky"},{"bic":"FIOBCZPP","code":"2010","name":"Fio banka, a.s."},{"bic":"JTBPCZPP","code":"5800","name":"J&T BANKA, a.s."},{"bic":"EXPNCZPP","code":"4000","name":"Max banka a.s."},{"bic":"MPUBCZPP","code":"2070","name":"TRINITY BANK a.s."},{"bic":"PMBPCZPP","code":"6000","name":"PPF banka a.s."},{"bic":"AGBACZPP","code":"0600","name":"MONETA Money Bank, a.s."},{"bic":"AIRACZPP","code":"3030","name":"Air bank a.s."},{"bic":"CTASCZPP","code":"2250","name":"Banka CREDITAS a.s."}]}');
+
+/***/ }),
+
+/***/ "./resources/js/field.js":
+/*!*******************************!*\
+  !*** ./resources/js/field.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_IndexField__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/IndexField */ "./resources/js/components/IndexField.vue");
+/* harmony import */ var _components_DetailField__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/DetailField */ "./resources/js/components/DetailField.vue");
+/* harmony import */ var _components_FormField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/FormField */ "./resources/js/components/FormField.vue");
+
+
+
+Nova.booting(function (app, store) {
+  app.component('index-bank', _components_IndexField__WEBPACK_IMPORTED_MODULE_0__["default"]);
+  app.component('detail-bank', _components_DetailField__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  app.component('form-bank', _components_FormField__WEBPACK_IMPORTED_MODULE_2__["default"]);
+});
+
+/***/ }),
+
+/***/ "./resources/js/functions.js":
+/*!***********************************!*\
+  !*** ./resources/js/functions.js ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var BigNumber = __webpack_require__(/*! bignumber.js */ "./node_modules/bignumber.js/bignumber.js");
+function extractIBAN(iban) {
+  iban = _formatIBAN(iban);
+  if (!validateIBAN(iban)) return {
+    'valid': false
+  };
+  var options = _getOptionsByIBAN(iban);
+  var data = _matchIban(iban, options.iban_regex);
+  if (data !== false) {
+    data['valid'] = true;
+  } else {
+    return {
+      'valid': false
+    };
+  }
+  var bank = _getBankByCode(data.bank_code, options.bank);
+  if (bank !== false) {
+    data['name'] = bank.name;
+    data['bic'] = _formatBIC(bank.bic);
+  }
+  return data;
+}
+function extractAccountNumberAndBIC(account_number, bic) {
+  bic = _formatBIC(bic);
+  var country = _getCountryFromBIC(bic);
+  var options = _getOptionsByCountry(country);
+  var bank = _getBankByBic(bic, options.bank);
+  var number = bank.code + account_number.padStart(options.account_prefix + options.account_number, 0);
+  var check_digits = _getCheckDigits(number + country + '00');
+  var iban = country + check_digits + number;
+  var data = _matchIban(iban, options.iban_regex);
+  if (data !== false) {
+    data['valid'] = true;
+  } else {
+    return {
+      'valid': false
+    };
+  }
+  data['name'] = bank.name;
+  data['bic'] = bic;
+  return data;
+}
+function validateIBAN(iban) {
+  iban = _formatIBAN(iban);
+  var ibrev = iban.substr(4) + iban.substr(0, 4);
+  return _mod97(_replaceChars(ibrev)) == 1;
+}
+function _matchIban(iban, regex) {
+  var matches = iban.match(regex);
+  if (!matches) return false;
+  return {
+    'bank_code': matches[3],
+    'bban': matches[5],
+    'bic': null,
+    'branch_code': matches[4],
+    'check_digits': matches[2],
+    'country_code': matches[1],
+    'iban': matches[0],
+    'name': null
+  };
+}
+function _getBankByCode(bank_code, banks) {
+  var bank = banks.find(function (bank) {
+    return bank.code === bank_code;
+  });
+  return bank == undefined ? false : bank;
+}
+function _getBankByBic(bic, banks) {
+  var bank = banks.find(function (bank) {
+    return bic.startsWith(bank.bic);
+  });
+  return bank == undefined ? false : bank;
+}
+function _formatBIC(bic) {
+  return bic.replaceAll(' ', '').toUpperCase().concat('XXXXXXXXXXX').substring(0, 11);
+}
+function _getCountryFromIBAN(iban) {
+  return iban.substring(0, 2);
+}
+function _getCountryFromBIC(bic) {
+  return bic.substring(4, 6);
+}
+function _getOptionsByIBAN(iban) {
+  return _getOptionsByCountry(_getCountryFromIBAN(iban));
+}
+function _getOptionsByCountry(country) {
+  return __webpack_require__("./resources/js/country sync recursive ^\\.\\/.*\\.json$")("./" + country + ".json");
+}
+function _formatIBAN(iban) {
+  return iban.replaceAll(' ', '').toUpperCase();
+}
+function _getCheckDigits(number) {
+  for (var i = 0; i < number.length; i++) {
+    var _char = number[i];
+    if (!isNumeric(_char)) {
+      var position = _mod10(_char);
+      number = number.replaceAll(_char, position);
+    }
+  }
+  var div = new BigNumber(number).div(97);
+  var _float = (div.toFixed(5) + '').split('.')[1].slice(0, 5);
+  var result = parseFloat('0.' + _float).toFixed(5) * 97;
+  return 98 - Math.round(result);
+}
+function isNumeric(value) {
+  return /^-?\d+$/.test(value);
+}
+function _mod10(_char2) {
+  var alphabet = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
+  var check = alphabet.indexOf(_char2);
+  return check !== -1 ? check + 10 : false;
+}
+function _mod97(str) {
+  var res = 0;
+  for (var i = 0; i < str.length; i++) {
+    res = (res * 10 + parseInt(str[i], 10)) % 97;
+  }
+  return res;
+}
+function _replaceChars(str) {
+  var res = '';
+  for (var i = 0; i < str.length; i++) {
+    var cc = str.charCodeAt(i);
+    if (cc >= 65 && cc <= 90) {
+      res += (cc - 55).toString();
+    } else if (cc >= 97 && cc <= 122) {
+      res += (cc - 87).toString();
+    } else if (cc >= 48 && cc <= 57) {
+      res += str[i];
+    }
+  }
+  return res;
+}
+module.exports = {
+  extractIBAN: extractIBAN,
+  extractAccountNumberAndBIC: extractAccountNumberAndBIC,
+  validateIBAN: validateIBAN
+};
+
+/***/ }),
+
 /***/ "laravel-nova":
 /*!******************************!*\
   !*** external "LaravelNova" ***!
@@ -4278,28 +4299,6 @@ module.exports = LaravelNova;
 
 "use strict";
 module.exports = Vue;
-
-/***/ }),
-
-/***/ "./resources/js/country/CZ.json":
-/*!**************************************!*\
-  !*** ./resources/js/country/CZ.json ***!
-  \**************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"chars":24,"bank_code":4,"account_prefix":6,"account_number":10,"iban_regex":"^([a-zA-Z]{2})(\\\\d{2})(\\\\d{4})(\\\\d{6})(\\\\d{10})$","source":"https://www.cnb.cz/en/payments/accounts-bank-codes/","bank":[{"bic":"KOMBCZPP","code":"0100","name":"Komerční banka, a.s."},{"bic":"CEKOCZPP","code":"0300","name":"Československá obchodní banka, a. s."},{"bic":"AGBACZPP","code":"0600","name":"MONETA Money Bank, a.s."},{"bic":"CNBACZPP","code":"0710","name":"ČESKÁ NÁRODNÍ BANKA"},{"bic":"GIBACZPX","code":"0800","name":"Česká spořitelna, a.s."},{"bic":"FIOBCZPP","code":"2010","name":"Fio banka, a.s."},{"bic":"CITFCZPP","code":"2060","name":"Citfin, spořitelní družstvo"},{"bic":"MPUBCZPP","code":"2070","name":"TRINITY BANK a.s."},{"bic":"","code":"2100","name":"Hypoteční banka, a.s."},{"bic":"","code":"2200","name":"Peněžní dům, spořitelní"},{"bic":"ARTTCZPP","code":"2220","name":"Artesa, spořitelní družstvo"},{"bic":"CTASCZ22","code":"2250","name":"Banka CREDITAS a.s."},{"bic":"družstvo","code":"2260","name":"NEY spořitelní"},{"bic":"záložna","code":"2275","name":"Podnikatelská družstevní"},{"bic":"CITICZPX","code":"2600","name":"Citibank Europe plc, organizační složka"},{"bic":"BACXCZPP","code":"2700","name":"UniCredit Bank Czech Republic and Slovakia, a.s."},{"bic":"AIRACZPP","code":"3030","name":"Air Bank a.s."},{"bic":"BPPFCZP1","code":"3050","name":"BNP Paribas Personal Finance SA, odštěpný závod"},{"bic":"BPKOCZPP","code":"3060","name":"PKO BP S.A., Czech Branch"},{"bic":"INGBCZPP","code":"3500","name":"ING Bank N.V."},{"bic":"EXPNCZPP","code":"4000","name":"Max banka a.s."},{"bic":"NROZCZPP","code":"4300","name":"Národní rozvojová banka, a.s."},{"bic":"RZBCCZPP","code":"5500","name":"Raiffeisenbank a.s."},{"bic":"JTBPCZPP","code":"5800","name":"J&T BANKA, a.s."},{"bic":"PMBPCZPP","code":"6000","name":"PPF banka a.s."},{"bic":"","code":"6100","name":"kód užíván pro doběh plateb ve prospěch Raiffeisenbank a.s. do 30. 6. 2023"},{"bic":"COBACZPX","code":"6200","name":"COMMERZBANK Aktiengesellschaft, pobočka Praha"},{"bic":"BREXCZPP","code":"6210","name":"mBank S.A., organizační složka"},{"bic":"GEBACZPP","code":"6300","name":"BNP Paribas S.A., pobočka Česká republika"},{"bic":"SUBACZPP","code":"6700","name":"Všeobecná úverová banka a.s., pobočka Praha"},{"bic":"VBOECZ2X","code":"6800","name":"Sberbank CZ, a.s. v likvidaci"},{"bic":"DEUTCZPX","code":"7910","name":"Deutsche Bank Aktiengesellschaft Filiale Prag, organizační složka"},{"bic":"","code":"7950","name":"Raiffeisen stavební spořitelna a.s."},{"bic":"","code":"7960","name":"ČSOB Stavební spořitelna, a.s."},{"code":"7970","name":"MONETA Stavební Spořitelna, a.s."},{"bic":"","code":"7990","name":"Modrá pyramida stavební spořitelna, a.s."},{"bic":"GENOCZ21","code":"8030","name":"Volksbank Raiffeisenbank Nordoberpfalz eG pobočka Cheb"},{"bic":"OBKLCZ2X","code":"8040","name":"Oberbank AG pobočka Česká republika"},{"bic":"","code":"8060","name":"Stavební spořitelna České spořitelny, a.s."},{"bic":"CZEECZPP","code":"8090","name":"Česká exportní banka, a.s."},{"bic":"MIDLCZPP","code":"8150","name":"HSBC Continental Europe, Czech Republic"},{"bic":"","code":"8190","name":"Sparkasse Oberlausitz-Niederschlesien"},{"bic":"FFCSCZP1","code":"8198","name":"FAS finance company s.r.o."},{"bic":"MOUSCZP2","code":"8199","name":"MoneyPolo Europe s.r.o."},{"bic":"","code":"8200","name":"PRIVAT BANK der Raiffeisenlandesbank Oberösterreich Aktiengesellschaft, pobočka Česká republika"},{"bic":"PAERCZP1","code":"8220","name":"Payment execution s.r.o."},{"bic":"","code":"8230","name":"ABAPAY s.r.o."},{"bic":"","code":"8240","name":"Družstevní záložna Kredit, v likvidaci"},{"bic":"BKCHCZPP","code":"8250","name":"Bank of China (CEE) Ltd. Prague Branch"},{"bic":"COMMCZPP","code":"8255","name":"Bank of Communications Co., Ltd., Prague Branch odštěpný závod"},{"bic":"ICBKCZPP","code":"8265","name":"Industrial and Commercial Bank of China Limited, Prague Branch, odštěpný závod"},{"bic":"FAPOCZP1","code":"8270","name":"Fairplay Pay s.r.o."},{"bic":"BEFKCZP1","code":"8280","name":"B-Efekt a.s."},{"bic":"MRPSCZPP","code":"8293","name":"Mercurius partners s.r.o."},{"bic":"BEORCZP2","code":"8299","name":"BESTPAY s.r.o."},{"bic":"","code":"8500","name":"Multitude Bank p.l.c."}]}');
-
-/***/ }),
-
-/***/ "./resources/js/country/SK.json":
-/*!**************************************!*\
-  !*** ./resources/js/country/SK.json ***!
-  \**************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"chars":24,"bank_code":4,"account_prefix":6,"account_number":10,"iban_regex":"^([a-zA-Z]{2})(\\\\d{2})(\\\\d{4})(\\\\d{6})(\\\\d{10})$","source":"https://nbs.sk/en/payments/general-information/directories-and-registers/directory-identification-codes-domestic-payment-system-in-sr/","bank":[{"bic":"SUBASKBX","code":"0200","name":"Všeobecná úverová banka, a.s."},{"bic":"GIBASKBX","code":"0900","name":"Slovenská sporiteľňa, a.s."},{"bic":"NBSBSKBX","code":"0720","name":"Národná banka Slovenska"},{"bic":"TATRSKBX","code":"1100","name":"Tatra banka, a.s."},{"bic":"UNCRSKBX","code":"1111","name":"UniCredit Bank Czech Republic and Slovakia, a.s., pobočka zahraničnej banky"},{"bic":"SLZBSKBA","code":"3000","name":"Slovenská záručná a rozvojová banka, a.s."},{"bic":"LUBASKBX","code":"3100","name":"Prima banka Slovensko, a.s. – kód pre dobeh platieb"},{"bic":"KOMASK2X","code":"5600","name":"Prima banka Slovensko, a.s."},{"bic":"PRVASKBA","code":"5900","name":"Prvá stavebná sporiteľňa, a.s."},{"bic":"POBNSKBA","code":"6500","name":"365.bank, a.s."},{"bic":"INGBSKBX","code":"7300","name":"ING Bank N.V.,  pobočka zahraničnej banky"},{"bic":"CEKOSKBX","code":"7500","name":"Československá obchodná banka, a.s."},{"bic":"WUSTSKBA","code":"7930","name":"Wüstenrot stavebná sporiteľňa, a.s."},{"bic":"KOMBSKBA","code":"8100","name":"Komerční banka, a.s., pobočka zahraničnej banky"},{"bic":"BSLOSK22","code":"8120","name":"Privatbanka, a.s."},{"bic":"CITISKBA","code":"8130","name":"Citibank Europe plc, pobočka zahraničnej banky"},{"bic":"KBSPSKBX","code":"8170","name":"ČSOB stavebná sporiteľňa, a.s."},{"bic":"EXSKSKBX","code":"8160","name":"EXIMBANKA SR"},{"bic":"SPSRSKBA","code":"8180","name":"Štátna pokladnica"},{"bic":"CDSA","code":"8191","name":"Centrálny depozitár cenných papierov SR, a.s."},{"bic":"MAISSA","code":"8400","name":"COFIDIS SA, pobočka zahraničnej banky"},{"bic":"JTBPSKBA","code":"8320","name":"J&T BANKA, a.s., pobočka zahraničnej banky"},{"bic":"FIOZSKBA","code":"8330","name":"Fio banka, a.s., pobočka zahraničnej banky"},{"bic":"BREXSKBX","code":"8360","name":"mBank S.A., pobočka zahraničnej banky"},{"bic":"OBKLSKBA","code":"8370","name":"Oberbank AG  pobočka zahraničnej banky v Slovenskej republike"},{"bic":"BFKKSKBB","code":"8420","name":"BKS Bank AG, pobočka zahraničnej banky v SR"},{"bic":"KODBSKBX","code":"8430","name":"KDB Bank Europe Ltd., pobočka zahraničnej banky"},{"code":"9950","bic":"PKSR","name":"SIA Slovakia, s.r.o."},{"bic":"TPAYSKBX","code":"9952","name":"Trust Pay, a.s."},{"bic":"KPAYSK22","code":"9954","name":"K-PAY a.s."},{"bic":"PANXSK22","code":"9955","name":"Unifiedpost Payments, organizačná zložka"},{"code":"8440","bic":"BNPASA","name":"BNP PARIBAS PERSONAL FINANCE SA, pobočka zahraničnej banky"},{"bic":"BPKOSKBB","code":"8450","name":"PKO BP S.A., pobočka zahraničnej banky"},{"bic":"FIOBCZPP","code":"2010","name":"Fio banka, a.s."},{"bic":"JTBPCZPP","code":"5800","name":"J&T BANKA, a.s."},{"bic":"EXPNCZPP","code":"4000","name":"Max banka a.s."},{"bic":"MPUBCZPP","code":"2070","name":"TRINITY BANK a.s."},{"bic":"PMBPCZPP","code":"6000","name":"PPF banka a.s."},{"bic":"AGBACZPP","code":"0600","name":"MONETA Money Bank, a.s."}]}');
 
 /***/ })
 

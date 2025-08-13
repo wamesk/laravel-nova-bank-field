@@ -1,10 +1,12 @@
 <?php
 
-namespace Wame\Bank;
+declare(strict_types = 1);
+
+namespace Wame\LaravelNovaBankField\Fields;
 
 use Laravel\Nova\Fields\Repeater\Repeatable;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use Wame\Bank\Bank;
+use Wame\LaravelNovaBankField\Fields\Bank;
 
 class BankRepeater extends Repeatable
 {

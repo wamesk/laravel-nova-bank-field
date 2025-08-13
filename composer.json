@@ -4,7 +4,7 @@
     "keywords": [
         "laravel",
         "nova",
-        "nova4",
+        "nova5",
         "bank",
         "iban",
         "bban",
@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Wame\\Bank\\": "src/"
+            "Wame\\LaravelNovaBankField\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Wame\\Bank\\FieldServiceProvider"
+                "Wame\\LaravelNovaBankField\\Providers\\LaravelNovaBankFieldServiceProvider"
             ]
         }
     },

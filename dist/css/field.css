@@ -26,10 +26,3 @@
   margin-top: -0.2rem;
 }
 
-.popover-wrapper {
-  position: relative;
-}
-.popover-wrapper .popover {
-  position: absolute;
-}
-

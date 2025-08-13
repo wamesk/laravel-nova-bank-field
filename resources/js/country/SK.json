@@ -162,8 +162,13 @@
       "name": "Unifiedpost Payments, organizačná zložka"
     },
     {
-      "code": "8440",
+      "bic": "PAYO",
+      "code": "9956",
+      "name": "Payout a.s."
+    },
+    {
       "bic": "BNPASA",
+      "code": "8440",
       "name": "BNP PARIBAS PERSONAL FINANCE SA, pobočka zahraničnej banky"
     },
     {
@@ -200,6 +205,16 @@
       "bic": "AGBACZPP",
       "code": "0600",
       "name": "MONETA Money Bank, a.s."
+    },
+    {
+      "bic": "AIRACZPP",
+      "code": "3030",
+      "name": "Air bank a.s."
+    },
+    {
+      "bic": "CTASCZPP",
+      "code": "2250",
+      "name": "Banka CREDITAS a.s."
     }
   ]
 }

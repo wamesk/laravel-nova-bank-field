@@ -1,6 +1,8 @@
 <?php
 
-namespace Wame\Bank;
+declare(strict_types = 1);
+
+namespace Wame\LaravelNovaBankField\Fields;
 
 use Laravel\Nova\Fields\Field;
 
