@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace Wame\LaravelNovaBankField\Http\Controllers;
+namespace Wame\LaravelNovaBankField\Services;
 
-class Bank
+class BankService
 {
     public static function extractIBAN($iban)
     {
@@ -84,7 +84,7 @@ class Bank
     {
         $iban = self::formatIBAN($iban);
 
-        $ibrev = Bank . phpsubstr($iban, 4) . substr($iban, 0, 4);
+        $ibrev = substr($iban, 4) . substr($iban, 0, 4);
 
         return self::mod97(self::replaceChars($ibrev)) == 1;
     }
